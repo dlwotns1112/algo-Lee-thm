@@ -16,7 +16,7 @@ public class G5_17396_백도어_756ms {
         int M = Integer.parseInt(st.nextToken());
 
         Node[] nodes = new Node[N];
-        long[] distance = new long[N--];
+        long[] distance = new long[N];
         Arrays.fill(distance, Long.MAX_VALUE);
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
@@ -31,7 +31,7 @@ public class G5_17396_백도어_756ms {
             nodes[b] = new Node(a, t, nodes[b]);
         }
         PriorityQueue<Node> pq = new PriorityQueue<>();
-        pq.offer(new Node(N, 0, null));
+        pq.offer(new Node(N - 1, 0, null));
         while (!pq.isEmpty()) {
             Node cur = pq.poll();
             if (distance[cur.to] < cur.weight) continue;
