@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class G3_01248_guess_264ms {
+public class G3_01248_guess_148ms {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
@@ -28,7 +28,7 @@ public class G3_01248_guess_264ms {
         if (n < r) {
             return true;
         }
-label:  for (int cur = -10; cur < 11; cur++) {
+label:  for (int cur = 10; cur > -11; cur--) {
             for (int i = 1; i <= r; i++) {
                 sum[i][r] = sum[i][r - 1] + cur;
                 switch (matrix[i][r]) {
