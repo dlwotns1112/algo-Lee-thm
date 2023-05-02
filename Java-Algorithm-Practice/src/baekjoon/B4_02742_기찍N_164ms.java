@@ -1,7 +1,8 @@
-import java.util.*;
+package baekjoon;
+
 import java.io.*;
 
-public class Main {
+public class B4_02742_기찍N_164ms {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine()) + 1;
