@@ -1,7 +1,8 @@
-import java.io.*;
-import java.util.*;
+package baekjoon;
 
-public class Main {
+import java.io.*;
+
+public class B4_11720_숫자의합_76ms {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
